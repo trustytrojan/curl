@@ -794,7 +794,6 @@ if(CURL_USE_OPENSSL)
 endif()
 
 if(CURL_USE_MBEDTLS)
-  find_package(MbedTLS REQUIRED)
   set(_ssl_enabled ON)
   set(USE_MBEDTLS ON)
   list(APPEND CURL_LIBS ${MBEDTLS_LIBRARIES})
